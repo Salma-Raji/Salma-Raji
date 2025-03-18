@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Salma Raji</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #34495e;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Section with Photo and Contact Information */
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 20px;
+        }
+
+        .header img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 30px;
+            border: 5px solid #3498db;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .header .info {
+            font-size: 14px;
+            color: #7f8c8d;
+            line-height: 1.5;
+        }
+
+        .header h2 {
+            font-size: 22px;
+            color: #3498db;
+            margin-top: 10px;
+        }
+
+        /* Profile Section */
+        .profile-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-section h2 {
+            font-size: 26px;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+
+        .profile-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        section ul li {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        section ul li::before {
+            content: "• ";
+            color: #3498db;
+        }
+
+        /* Social Media Section */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            display: none;
+        }
+
+        .social-media a {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+        }
+
+        .social-media a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button for Social Media Toggle */
+        .social-media-toggle {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-media-toggle:hover {
+            background-color: #2980b9;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .header img {
+                margin-bottom: 20px;
+            }
+
+            .social-media {
+                display: block;
+            }
+
+            .social-media-toggle {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        // Show social media links on click
+        function showSocialMedia() {
+            var socialMedia = document.querySelector('.social-media');
+            socialMedia.style.display = socialMedia.style.display === 'none' ? 'flex' : 'none';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section with Photo and Contact Information -->
+        <div class="header">
+            <img src="photo.jpg" alt="Salma Raji">
+            <div>
+                <h1>Salma Raji</h1>
+                <h2>Étudiante en Ingénierie</h2>
+                <div class="info">
+                    <p>Email: salmaraji0204@gmail.com</p>
+                    <p>Téléphone: 06 0 41 49 05</p>
+                    <p>Adresse: Marrakech Azli Sud</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <h2>Profil</h2>
+            <p><strong>Étudiante en 2ème année préparatoire en ingénierie à l'École Marocaine des Sciences de l'Ingénierie.</strong></p>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education">
+            <h2>Formation</h2>
+            <ul>
+                <li>Classe Préparatoire Scientifique</li>
+                <li>Bac Scientifique - 2022</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Compétences</h2>
+            <ul>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>Programmation en C</li>
+                <li>Microsoft Office (Word, PowerPoint, Excel, etc.)</li>
+            </ul>
+        </section>
+
+        <!-- Languages Section -->
+        <section class="languages">
+            <h2>Langues</h2>
+            <ul>
+                <li>Arabe - Langue maternelle</li>
+                <li>Français - Courant</li>
+                <li>Anglais - Avancé</li>
+            </ul>
+        </section>
+
+        <!-- Interests Section -->
+        <section class="interests">
+            <h2>Centres d'intérêt</h2>
+            <ul>
+                <li>Bénévolat</li>
+                <li>Voyage</li>
+                <li>Lecture</li>
+            </ul>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="social-media">
+            <a href="https://www.instagram.com/salmaa_raji?igsh=ZXV0cDRoYTljcWZy" target="_blank" title="Instagram">📸</a>
+            <a href="https://www.facebook.com/share/15v5mdLAaK/" target="_blank" title="Facebook">📘</a>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2025 Salma Raji</p>
+            <button class="social-media-toggle" onclick="showSocialMedia()">Voir mes réseaux sociaux</button>
+        </footer>
+    </div>
+</body>
+
+</html>
