@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Gourmand</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Menu Gourmand</h1>
+    </header>
+    <section class="menu-container">
+        <div class="menu-item">
+            <h2>Risotto au Safran</h2>
+            <p class="description">Un risotto crémeux parfumé au safran, accompagné de légumes de saison sautés et d’une touche de parmesan râpé.</p>
+            <ul class="ingredients">
+                <li>Riz Arborio</li>
+                <li>Safran</li>
+                <li>Parmesan râpé</li>
+            
+/* Réinitialisation et réglages généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    font-size: 16px;
+}
+
+h1 {
+    color: #ff5722;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+/* Conteneur principal du menu */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Chaque item du menu */
+.menu-item {
+    background: linear-gradient(135deg, #ffffff 60%, #f1f1f1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Effet au survol */
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre de chaque plat */
+.menu-item h2 {
+    color: #333;
+    font-size: 1.75em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Description des plats */
+.description {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Liste des ingrédients */
+.ingredients {
+    list-style: none;
+    padding: 0;
+    font-size: 1em;
+    color: #777;
+}
+
+.ingredients li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.ingredients li::before {
+    content: "\2022";  /* Utilisation d'un cercle comme puce */
+    color: #ff5722;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Animations pour un effet plus dynamique */
+.menu-item h2 {
+    animation: fadeIn 1s ease-out;
+}
+
+.description, .ingredients {
+    animation: slideUp 1s ease-out;
+}
+
+@keyframes fadeIn {
+    fr
